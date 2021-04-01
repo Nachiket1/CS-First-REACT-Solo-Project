@@ -131,10 +131,12 @@ class App extends React.Component {
                 return (
                   <li key = { task.id }>
                     { task.value }
-                    <button className = 'btn btn-floating'
-                      onClick = { () => this.deleteTask(task.id) }>
+                    <button 
+                      className = 'btn btn-floating'
+                      onClick = { () => this.deleteTask(task.id) }
+                      >
                       <i class = 'material-icons'>Delete</i>
-                      </button>
+                    </button>
                   </li>
                 );
               })}
